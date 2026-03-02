@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-27 09:47:29.596100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "labor_staff",
+  "planned_count",
+  "present_count",
+  "absent_count",
+  "ot_hours",
+  "rate",
+  "line_cost",
+  "ot_rate",
+  "ot_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "labor_staff",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Labor Staff",
+   "options": "Labor Staff",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Planned Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "present_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Present Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "absent_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Absent Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "line_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Line Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ot_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "OT Hours"
+  },
+  {
+   "fieldname": "ot_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "OT Rate"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Code"
+  },
+  {
+   "fieldname": "ot_amount",
+   "fieldtype": "Currency",
+   "label": "OT Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-12 15:28:11.234265",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Labor Attendance Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

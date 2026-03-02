@@ -5,6 +5,17 @@ app_description = "Labor Management System"
 app_email = "selvavigneshm19@gmail.com"
 app_license = "mit"
 
+
+scheduler_events = {
+	"daily": [
+		 "labor_management.tasks.expire_vendor_contracts"
+	],
+ 
+   "monthly": [
+        "labor_management.tasks.auto_create_monthly_labor_accrual"
+    ] 
+}
+
 # Apps
 # ------------------
 

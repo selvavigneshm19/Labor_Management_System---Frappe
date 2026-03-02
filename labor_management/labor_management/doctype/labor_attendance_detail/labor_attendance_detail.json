@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 15:01:21.241069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_attendance_section",
+  "labor_staff",
+  "skill_type",
+  "attendance_status",
+  "in_time",
+  "out_time",
+  "working_hours",
+  "daily_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Staff Attendance"
+  },
+  {
+   "fieldname": "labor_staff",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Labor Staff",
+   "options": "Labor Staff",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "labor_staff.skill_type",
+   "fieldname": "skill_type",
+   "fieldtype": "Data",
+   "label": "Skill Type",
+   "read_only": 1
+  },
+  {
+   "default": "Present",
+   "fieldname": "attendance_status",
+   "fieldtype": "Select",
+   "label": "Attendance Status",
+   "options": "Present\nAbsent\nHalf Day",
+   "reqd": 1
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Time",
+   "label": "In Time"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Time",
+   "label": "Out Time"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Float",
+   "label": "Working Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_rate",
+   "fieldtype": "Currency",
+   "label": "Daily Rate",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-22 16:45:10.565474",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Labor Attendance Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

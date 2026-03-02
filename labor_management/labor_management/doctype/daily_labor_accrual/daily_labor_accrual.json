@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DLA-.YYYY.MM.DD.-.#####",
+ "creation": "2026-01-27 17:12:27.550697",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "accrual_header_section",
+  "accrual_date",
+  "warehouse",
+  "vendor",
+  "attendance",
+  "accrual_status",
+  "accrual_lines",
+  "cost_summary_section",
+  "total_present",
+  "total_ot_hours",
+  "total_cost",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "accrual_header_section",
+   "fieldtype": "Section Break",
+   "label": "Accrual Header"
+  },
+  {
+   "fieldname": "accrual_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Accrual Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Labor Vendor"
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Link",
+   "label": "Attendance",
+   "options": "Labor Attendance V2"
+  },
+  {
+   "fieldname": "accrual_status",
+   "fieldtype": "Select",
+   "label": "Accrual Status",
+   "options": "Draft\nPosted"
+  },
+  {
+   "fieldname": "cost_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Summary"
+  },
+  {
+   "fieldname": "total_present",
+   "fieldtype": "Int",
+   "label": "Total Present",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_ot_hours",
+   "fieldtype": "Float",
+   "label": "Total OT Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accrual_lines",
+   "fieldtype": "Table",
+   "label": "Accrual Lines",
+   "options": "Daily Labor Accrual Line"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Labor Accrual",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-03 11:48:21.757222",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Daily Labor Accrual",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

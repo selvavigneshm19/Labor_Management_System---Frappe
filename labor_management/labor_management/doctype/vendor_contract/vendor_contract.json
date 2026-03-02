@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VC-{vendor}-{warehouse}-.YYYY",
+ "creation": "2026-01-21 17:54:56.456301",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_details_section",
+  "vendor",
+  "warehouse",
+  "contract_start_date",
+  "contract_end_date",
+  "status",
+  "rate_card_section",
+  "skilled_rate",
+  "semi_skilled_rate",
+  "unskilled_rate",
+  "contract_documents_section",
+  "contract_document",
+  "docusign_envelope_id",
+  "contract_signed",
+  "signed_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Details"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "options": "Labor Vendor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Contract Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Contract End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nActive\nExpired",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate_card_section",
+   "fieldtype": "Section Break",
+   "label": "Rate Card"
+  },
+  {
+   "fieldname": "skilled_rate",
+   "fieldtype": "Currency",
+   "label": "Skilled Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "semi_skilled_rate",
+   "fieldtype": "Currency",
+   "label": "Semi Skilled Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unskilled_rate",
+   "fieldtype": "Currency",
+   "label": "Unskilled Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Documents"
+  },
+  {
+   "fieldname": "contract_document",
+   "fieldtype": "Attach",
+   "label": "Contract Document"
+  },
+  {
+   "fieldname": "docusign_envelope_id",
+   "fieldtype": "Data",
+   "label": "DocuSign Envelope ID",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "contract_signed",
+   "fieldtype": "Check",
+   "label": "Contract Signed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signed_on",
+   "fieldtype": "Datetime",
+   "label": "Signed On",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-27 17:01:57.935750",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Vendor Contract",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

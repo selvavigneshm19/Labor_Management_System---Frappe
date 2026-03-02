@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LS-.#####",
+ "creation": "2026-01-22 11:55:13.769645",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_v9hl",
+  "vendor",
+  "warehouse",
+  "staff_name",
+  "staff_code",
+  "skill_type",
+  "status",
+  "amended_from",
+  "identification_basic_section",
+  "mobile_number",
+  "aadhaar__id_number",
+  "contract_cost_read_only_for_now_section",
+  "applied_contract",
+  "daily_rate",
+  "ot_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_v9hl",
+   "fieldtype": "Section Break",
+   "label": "Staff Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Labor Staff",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Staff Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Staff Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "skill_type",
+   "fieldtype": "Select",
+   "label": "Skill Type",
+   "options": "Skilled\nSemiSkilled\nUnskilled",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nActive\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identification_basic_section",
+   "fieldtype": "Section Break",
+   "label": "Identification (Basic)"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aadhaar__id_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar / ID Number"
+  },
+  {
+   "fieldname": "contract_cost_read_only_for_now_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Cost (Read only for now)"
+  },
+  {
+   "fieldname": "applied_contract",
+   "fieldtype": "Link",
+   "label": "Applied Contract",
+   "options": "Vendor Contract",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Daily Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "options": "Labor Vendor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ot_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "OT Rate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-12 13:41:10.879557",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Labor Staff",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

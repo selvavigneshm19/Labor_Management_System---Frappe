@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Warehouse",
+ "creation": "2026-01-20 16:24:43.690227",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "warehouse_details_section",
+  "warehouse",
+  "effective_date",
+  "status",
+  "version_number",
+  "display_title",
+  "labor_counts_section",
+  "total_skilled",
+  "total_semi_skilled",
+  "total_unskilled",
+  "vendor_allocation_section",
+  "vendor_allocations",
+  "amended_from",
+  "change_history_section",
+  "change_reason",
+  "change_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "warehouse_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse Details"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nSuperseded",
+   "reqd": 1
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Version Number"
+  },
+  {
+   "fieldname": "labor_counts_section",
+   "fieldtype": "Section Break",
+   "label": "Labor Counts"
+  },
+  {
+   "fieldname": "total_skilled",
+   "fieldtype": "Int",
+   "label": "Total Skilled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_semi_skilled",
+   "fieldtype": "Int",
+   "label": "Total Semi Skilled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_unskilled",
+   "fieldtype": "Int",
+   "label": "Total Unskilled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Vendor Allocation"
+  },
+  {
+   "fieldname": "vendor_allocations",
+   "fieldtype": "Table",
+   "label": "Vendor Allocations",
+   "options": "Vendor Labor Allocation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Warehouse Labor Structure",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "display_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Display Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "change_history_section",
+   "fieldtype": "Section Break",
+   "label": "Change History"
+  },
+  {
+   "fieldname": "change_reason",
+   "fieldtype": "Small Text",
+   "label": "Change Reason"
+  },
+  {
+   "fieldname": "change_request",
+   "fieldtype": "Link",
+   "label": "Change Request",
+   "options": "Labor Structure Change Request",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-21 15:08:20.554852",
+ "modified_by": "selvavigneshm19@gmail.com",
+ "module": "Labor Management",
+ "name": "Warehouse Labor Structure",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "display_title"
+}

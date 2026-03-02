@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LAT-V2-.#####",
+ "creation": "2026-01-27 11:28:30.911916",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nfp2",
+  "attendance_date",
+  "warehouse",
+  "vendor",
+  "labor_allocation",
+  "amended_from",
+  "attendance_summary_section",
+  "total_present",
+  "total_absent",
+  "total_ot_hours",
+  "total_cost",
+  "in_time",
+  "out_time",
+  "attendance_lines_section",
+  "attendance_lines"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nfp2",
+   "fieldtype": "Section Break",
+   "label": "Attendance Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Labor Attendance V2",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Attendance Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Labor Vendor"
+  },
+  {
+   "fieldname": "labor_allocation",
+   "fieldtype": "Link",
+   "label": "Labor Allocation",
+   "options": "Labor Allocation"
+  },
+  {
+   "fieldname": "attendance_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Summary"
+  },
+  {
+   "fieldname": "total_present",
+   "fieldtype": "Int",
+   "label": "Total Present",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_absent",
+   "fieldtype": "Int",
+   "label": "Total Absent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_ot_hours",
+   "fieldtype": "Float",
+   "label": "Total OT Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attendance_lines_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Lines"
+  },
+  {
+   "fieldname": "attendance_lines",
+   "fieldtype": "Table",
+   "label": "Attendance Lines",
+   "options": "Labor Attendance Line"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "label": "IN Time"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "label": "OUT Time"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-12 10:16:35.841210",
+ "modified_by": "Administrator",
+ "module": "Labor Management",
+ "name": "Labor Attendance V2",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
